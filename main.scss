@@ -63,16 +63,20 @@ body {
 }
 
 .about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
 }
 
-.about-content h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#quote {
+    display: inline-block;
     font-size: 2rem;
+    color: color(secondary);
+    margin: 0;
+    padding: 0;
+}
+
+#quote-author {
+    display: inline-block;
+    font-size: 3rem;
     color: color(secondary);
 }
 #logo img {

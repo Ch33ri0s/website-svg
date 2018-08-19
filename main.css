@@ -58,28 +58,20 @@ body {
 }
 
 .about-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: inline-block;
 }
 
-.about-content h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#quote {
+  display: inline-block;
   font-size: 2rem;
+  color: #51ffbd;
+  margin: 0;
+  padding: 0;
+}
+
+#quote-author {
+  display: inline-block;
+  font-size: 3rem;
   color: #51ffbd;
 }
 
