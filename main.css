@@ -64,4 +64,21 @@ body {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
+@media screen and (max-width: 750px) {
+  .nav-bar-left ul {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    display: none;
+  }
+  #logo img {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width: 3rem;
+    margin-left: 90%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
 /*# sourceMappingURL=main.css.map */

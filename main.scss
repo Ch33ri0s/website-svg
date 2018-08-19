@@ -1,3 +1,16 @@
+$colors: (
+    background: #2c3539,
+    primary: #e53935,
+    secondary: #51ffbd,
+    accent: whitesmoke
+);
+
+@function color($arg) {
+    @return map-get($colors, $arg);
+}
+
+// Start Styling:
+
 body, html {
     margin: 0;
     padding: 0;
@@ -6,7 +19,7 @@ body, html {
 }
 
 body {
-    background-color: #2c3539;
+    background-color: color(background);
 }
 
 .cover-img {
@@ -45,17 +58,33 @@ body {
     padding-right: 20px;
     text-decoration: none;
     font-size: 1.6rem;
-    color: whitesmoke;
+    color: color(accent);
     border: 3px solid transparent;
     padding: 20px;
 
     &:hover {
         transition: all 1s ease-in-out;
-        border: 3px solid whitesmoke;
+        border: 3px solid color(accent);
     }
 
     &:active {
         transition: all 1s ease-in-out;
         
+    }
+}
+
+// Start Query:
+
+@media screen and (max-width: 750px) {
+    .nav-bar-left ul {
+        transition: all 1s ease-in-out;
+        display: none;
+    }
+
+    #logo img {
+        transition: all 1s ease-in-out;
+        width: 3rem;
+        margin-left: 90%;
+        justify-content: flex-end;
     }
 }
